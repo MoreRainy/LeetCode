@@ -128,7 +128,7 @@ public class LeetCode15三数之和 {
                         left++;
                     }
                 } else {
-                    resultList.add(Arrays.asList(nums[i], nums[left], nums[right]));
+                    resultList.add(Arrays.asList(nums[i], nums[left++], nums[right--]));
 
                     //去重
                     while (right >= 0 && nums[right] == nums[right + 1]) {
